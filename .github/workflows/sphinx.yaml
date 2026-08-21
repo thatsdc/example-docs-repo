@@ -1,0 +1,37 @@
+name: Deploy Docs and PR Previews
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build HTML documentation
+        run: |
+          uses: ammaraskar/sphinx-action@master
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-docs
+          path: docs/html/
+
+      - name: Deploy Production Docs to gh-pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/html/
