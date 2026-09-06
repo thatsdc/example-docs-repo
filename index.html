@@ -196,10 +196,29 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="user-guide/index.html">User Guide</a><input aria-label="Toggle navigation of User Guide" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="user-guide/index.html">User Guide</a><input aria-label="Toggle navigation of User Guide" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="user-guide/quick-installation.html">Quick Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user-guide/configuration.html">Configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="developer-docs/index.html">Developer Documentation</a><input aria-label="Toggle navigation of Developer Documentation" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="developer-docs/index.html">Developer Documentation</a><input aria-label="Toggle navigation of Developer Documentation" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="developer-docs/api/index.html">API</a><input aria-label="Toggle navigation of API" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="developer-docs/api/backend.html">Backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer-docs/api/jenkins_controller.html">Jenkins Context</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="developer-docs/data/index.html">Data</a><input aria-label="Toggle navigation of Data" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="developer-docs/data/collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer-docs/data/preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer-docs/data/formatting.html">Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer-docs/data/chunking.html">Chunking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer-docs/data/embedding.html">Embedding</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/agent.html">Agent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/agent-tools.html">Agent Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/evaluation.html">Evaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/jenkins_context_retrieval.html">Jenkins Context Retrieval</a></li>
 </ul>
 </li>
 </ul>
@@ -242,14 +261,34 @@
         <article role="main" id="furo-main-content">
           <section id="welcome-in-ai-chatbot-to-guide-user-workflow-plugin">
 <h1>Welcome in AI Chatbot to Guide User Workflow Plugin<a class="headerlink" href="#welcome-in-ai-chatbot-to-guide-user-workflow-plugin" title="Link to this heading">¶</a></h1>
-<p>Questo è il testo di introduzione del tuo progetto.</p>
+<p>This is the documentation for the AI ​​Chatbot to Guide User Workflow plugin, which integrates an agent-powered chatbot into the Jenkins interface.
+This tool is useful for both beginners who need guidance within the software and experts who need to troubleshoot a specific build failed.</p>
+<p>Question: Do you know why the build failed?</p>
+<p><img alt="Asking why the build failed" src="_images/BUILD_FAILED.gif" /></p>
+<p>Question: How can I install a new plugin?</p>
+<p><img alt="Asking how to install a plugin" src="_images/NEW_PLUGIN.gif" /></p>
+<p>The documentation is divided into two parts:</p>
+<ul class="simple">
+<li><p>User Guide</p></li>
+<li><p>Developer Documentation</p></li>
+</ul>
+<p>The user guides are intended for those who simply want to configure the plugin for an initial overview or those who want to deploy it in production, understanding all the different options and possible configurations.</p>
+<p>The developer documentation is intended for developers who want to contribute to the plugin or simply understand its inner workings.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="user-guide/index.html">User Guide</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="user-guide/index.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user-guide/quick-installation.html">Quick Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user-guide/configuration.html">Configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="developer-docs/index.html">Developer Documentation</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="developer-docs/index.html">Developer Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/api/index.html">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/data/index.html">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/agent.html">Agent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/agent-tools.html">Agent Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/evaluation.html">Evaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer-docs/jenkins_context_retrieval.html">Jenkins Context Retrieval</a></li>
 </ul>
 </li>
 </ul>
